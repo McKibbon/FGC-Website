@@ -1,0 +1,158 @@
+@import url(http://fonts.googleapis.com/css?family=Nunito); /*--- CHANGE Body Font --*/
+@import url(http://fonts.googleapis.com/css?family=Oxygen); /*--- CHANGE Heading Font--*/
+@import url(http://fonts.googleapis.com/css?family=Fjalla+One); /*--- CHANGE Navigation Font --*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(250, 250, 250);
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+}
+h1 {
+    font-family: 'Oxygen', sans-serif;
+    text-align: center;
+    font-size: 175%;
+    color: #35404f;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 3% 0;
+}
+h2, h3, h4 {
+    font-family: 'Oxygen', sans-serif;
+    text-align: center;
+    color: #35404f;
+    text-transform: uppercase;
+    letter-spacing: 1%;
+}
+p {
+    padding: 2%;
+    color: #525453;
+    text-align: justify;
+}
+img { 
+    max-width: 100%;
+    height: auto;
+}
+#wrapper {
+    margin: 0 auto;
+    max-width: 1120px;
+}
+.clearfix {
+    clear: both;
+}
+header {
+    width: 97%;
+}
+#logo{
+    float: left;
+    margin: 3% 0 0 5%;
+}
+#callout{
+    float: right;
+    margin: 10% 1% 2% 0;
+}
+#callout h2 {
+    text-align: right;
+    color: #7f7f7fec;
+}
+#banner-wrapper {
+    max-width: 1020px;
+    margin: 0 auto;
+    padding-bottom: 3%
+}
+.slider1 img {
+    width: 100%;   
+}
+.bx-prev, .bx-next {
+    display: none;
+}
+.one-third {
+    width: 28%;
+    float: left;
+    margin: 2% 0 3% 4%;
+}
+.chart {
+    padding: 0 7%;
+}
+h2.welcome { 
+    margin-top: 4%;
+}
+.left-col {
+    width: 60%;
+    float: left;
+    margin: 4% 0 4% 4%;
+}
+.sidebar{
+    width: 26%;
+    float: left;
+    margin: 4%;
+}
+.sidebar img{
+    opacity: .7;
+}
+footer {
+    background: #d3d3d3;
+    width: 100%;
+    padding-top: 1%;
+    overflow: auto;
+}
+.one-half {
+    width: 44%;
+    float: left;
+    margin: 2% 0 3% 4%;
+}
+footer h3 {
+    text-decoration: underline;
+}
+.footercontact {
+    text-align: center;
+}
+/*------------------------ End of Full Width -----------------------------
+
+/*------------------------ Media queries -----------------------------*/
+@media screen and (max-width: 769px) {
+    #wrapper {
+        margin-top: -1%;
+    }
+    #callout {
+        font-size: 50%;
+        width: 100%;
+        margin: 3% 0 2% 0;
+    }
+    .one-third {
+        width: 100%;
+        margin: 4% 0; 
+    }
+    h1 {
+        font-size: 125%;
+        letter-spacing: 2px;
+    }
+    h2.welcome {
+        font-size: 120%;
+    }
+    .left-col {
+        width: 100%;
+        margin: 0 0 3% 0;
+    }
+    .sidebar {
+        width: 100%;
+        margin: 0;
+    }
+    .sidebar img {
+        opacity: 1;
+    }
+    .one-half {
+        width: 100%;
+        margin: 0;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .header-wrap{
+        max-width: 1092px;
+        margin: 0 auto;
+    }
+}
