@@ -9,14 +9,14 @@
 
 body {
     background-color: rgb(250, 250, 250);
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Oxygen', sans-serif;
     font-size: 18px;
 }
 h1 {
     font-family: 'Oxygen', sans-serif;
     text-align: center;
-    font-size: 175%;
-    color: #35404f;
+    font-size: 4vw;
+    color: #28452c;
     text-transform: uppercase;
     letter-spacing: 3px;
     padding: 3% 0;
@@ -24,7 +24,7 @@ h1 {
 h2, h3, h4 {
     font-family: 'Oxygen', sans-serif;
     text-align: center;
-    color: #35404f;
+    color: #28452c;
     text-transform: uppercase;
     letter-spacing: 1%;
 }
@@ -47,13 +47,24 @@ img {
 header {
     width: 97%;
 }
+.header-wrap{
+    width: 100%;
+}
 #logo{
     float: left;
     margin: 3% 0 0 5%;
 }
+.logo-header img{
+    width: 100%;
+    height: auto;
+}
+
 #callout{
     float: right;
-    margin: 10% 1% 2% 0;
+    margin: 3% 1% 2% 5%;
+    font-size: 1.3vw;
+    
+    
 }
 #callout h2 {
     text-align: right;
@@ -114,14 +125,16 @@ footer h3 {
 /*------------------------ End of Full Width -----------------------------
 
 /*------------------------ Media queries -----------------------------*/
-@media screen and (max-width: 769px) {
+
+@media screen and (max-width: 541px) {
     #wrapper {
         margin-top: -1%;
     }
     #callout {
-        font-size: 50%;
+        display: none;
+        /*font-size: 90%;
         width: 100%;
-        margin: 3% 0 2% 0;
+        margin: 3% 0 2% 0;*/
     }
     .one-third {
         width: 100%;
@@ -150,9 +163,22 @@ footer h3 {
         margin: 0;
     }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1092px) {
     .header-wrap{
         max-width: 1092px;
         margin: 0 auto;
+    }
+}
+@media screen and (min-width: 1024px) {
+    #callout{
+        font-size: 13.312px;
+    }
+    h1{
+        font-size: 40.96px;
+    }
+}
+@media screen and (max-width: 647px) {
+    #callout{
+        display: none;
     }
 }
